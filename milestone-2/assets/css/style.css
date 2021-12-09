@@ -1,0 +1,93 @@
+/* commonGeneralRules */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--black: #000000;
+	--white: #ffffff;
+	--gray: #808080;
+	--header_mainCard_backgroundColor: #2e3a46;
+	--main_backgroundColor: #1e2d3b;
+}
+
+body {
+	background-color: var(--black);
+}
+/* /commonGeneralRules */
+
+/* header */
+.contentHeader {
+	background-color: var(--header_mainCard_backgroundColor);
+	margin: 0 auto;
+}
+
+#logo-Spotify {
+	width: 5%;
+	margin: 0.5rem 1rem;
+}
+
+#logo-Spotify:hover {
+	cursor: pointer;
+}
+/* /header */
+
+/* main */
+.contentMain {
+	height: 100vh;
+	background-color: var(--main_backgroundColor);
+	margin: 0 auto;
+}
+
+.cards {
+	text-align: center;
+}
+
+.row {
+	width: 100%;
+	margin: auto !important;
+	justify-content: center;
+	text-align: center;
+	padding-top: 3rem;
+}
+
+.col-2 {
+	height: auto;
+	padding: 0.5rem !important;
+	border: none;
+}
+
+.col-2:hover {
+	cursor: pointer;
+}
+
+.card {
+	height: 100%;
+	background-color: var(--header_mainCard_backgroundColor);
+}
+
+.card img {
+	padding: 0.5rem;
+}
+
+.card h2 {
+	margin: 0.5rem !important;
+	color: var(--white);
+}
+
+.card h2:hover {
+	text-decoration: underline;
+}
+
+h4 {
+	color: var(--gray);
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.card h4:hover {
+	text-decoration: underline;
+}
+/* /main */

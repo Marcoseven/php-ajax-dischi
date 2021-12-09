@@ -13,6 +13,8 @@ Attraverso l’utilizzo di axios: al caricamento della pagina axios chiederà, a
 Attraverso un’altra chiamata api, filtrare gli album per genere
 Info: Per la struttura dati guardate l'endpoint usato nell'esercizio vue-dischi.- 
 */
+
+require __DIR__ . '/components/database/albums.php';
 ?>
 
 <!DOCTYPE html>
@@ -29,14 +31,16 @@ Info: Per la struttura dati guardate l'endpoint usato nell'esercizio vue-dischi.
     <!-- header -->
     <header>
         <div class="container">
+            <div class="contentHeader">
+			<img id="logo-Spotify" src="./assets/img/spotify-logo.svg" alt="logo Spotify" />
+		</div>
         </div>
     </header>
     <!-- /header -->
 
     <!-- main -->
     <main>
-        <div class="container">
-        </div>
+        <?php require __DIR__ . '/components/partials/discs.php'; ?>
     </main>
     <!-- /main -->
 </body>

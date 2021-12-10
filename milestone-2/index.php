@@ -21,7 +21,7 @@
 
     <!-- main -->
     <main>
-        <div id="app">
+        <div id="app">  
             <div class="container">
                 <div class="contentMain">
                     <div class="row cards">

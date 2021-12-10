@@ -19,14 +19,12 @@ const app = new Vue({
 		discs: null,
 	},
 	mounted() {
-		axios
-			.get("./api/albums.php")
-			.then((response) => {
-				console.log(response);
-				this.discs = response.data;
-			})
-			.catch((error) => {
-				console.log('OPS, catch error: ' + error);
+		axios.get("./api/albums.php").then((response) => {
+			console.log(response);
+			this.discs = response.data;
+			console.log(response.data).catch((error) => {
+				console.log("OPS, catch error mounted: " + error);
 			});
+		});
 	},
 });
